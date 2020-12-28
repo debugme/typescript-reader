@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "start:build": "tsc --watch",
+    "start:run": "nodemon ./build/index.js",
+    "start": "concurrently npm:start:*",
+    "clean": "rimraf node_modules"
+  },
+  "devDependencies": {
+    "concurrently": "5.3.0",
+    "nodemon": "2.0.6",
+    "rimraf": "3.0.2",
+    "ts-node": "9.1.1"
+  }
+}
